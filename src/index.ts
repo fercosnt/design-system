@@ -14,6 +14,10 @@ export * from './components'
 // Assets
 export * from './assets'
 
+// Templates
+export * from './templates/admin'
+export * from './templates/public'
+
 // Utilities
 export { cn } from './utils/cn'
 export { useIsMobile } from './utils/use-mobile'
