@@ -6,7 +6,7 @@
  */
 
 import * as React from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
+import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Checkbox } from '@/components/ui/Checkbox'
@@ -186,7 +186,6 @@ export const ListWithFiltersTemplate = <T extends Record<string, any>>({
   bulkActions = [],
   currentPage = 1,
   totalPages = 1,
-  itemsPerPage = 10,
   isLoading = false,
   onSearch,
   onFilterChange,

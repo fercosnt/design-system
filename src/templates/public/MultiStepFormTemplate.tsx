@@ -138,7 +138,7 @@ export const MultiStepFormTemplate: React.FC<MultiStepFormTemplateProps> = ({
 
   const handleNext = async () => {
     // Validate current step
-    if (activeStep.validate) {
+    if (activeStep?.validate) {
       const isValid = await activeStep.validate()
       if (!isValid) return
     }
@@ -229,7 +229,7 @@ export const MultiStepFormTemplate: React.FC<MultiStepFormTemplateProps> = ({
       <Card>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
-          {activeStep.description && (
+          {activeStep?.description && (
             <p className="text-sm text-neutral-600 mt-2">
               {activeStep.description}
             </p>
@@ -238,7 +238,7 @@ export const MultiStepFormTemplate: React.FC<MultiStepFormTemplateProps> = ({
 
         <CardContent>
           {/* Step Content */}
-          <div className="mb-6">{activeStep.content}</div>
+          <div className="mb-6">{activeStep?.content}</div>
 
           {/* Navigation Buttons */}
           <div className="flex justify-between pt-6 border-t">

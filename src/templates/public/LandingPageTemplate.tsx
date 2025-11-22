@@ -10,7 +10,6 @@ import { BackgroundImage } from '@/assets/components/BackgroundImage'
 import { BeautySmileLogo } from '@/assets/components/BeautySmileLogo'
 import { GlassCard } from '@/components/glass/GlassCard'
 import { GlassButton } from '@/components/glass/GlassButton'
-import { Button } from '@/components/ui/Button'
 import { cn } from '@/utils/cn'
 
 export interface FeatureItem {
@@ -36,7 +35,7 @@ export interface CTAButton {
   /**
    * Button variant
    */
-  variant?: 'primary' | 'secondary' | 'accent'
+  variant?: 'primary' | 'light' | 'accent'
   /**
    * Button click handler
    */

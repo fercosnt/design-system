@@ -48,7 +48,7 @@ export interface ProfileData {
    */
   status?: {
     label: string
-    variant?: 'default' | 'success' | 'warning' | 'error' | 'info'
+    variant?: 'default' | 'success' | 'warning' | 'error'
   }
 }
 

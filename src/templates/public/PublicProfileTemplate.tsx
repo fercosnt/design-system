@@ -6,8 +6,7 @@
  */
 
 import * as React from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
-import { Badge } from '@/components/ui/Badge'
+import { Card, CardContent } from '@/components/ui/Card'
 import { cn } from '@/utils/cn'
 
 export interface PublicProfileData {

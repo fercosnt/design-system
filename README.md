@@ -108,6 +108,7 @@ function App() {
 
 ## 📚 Documentation
 
+- **Quick Start (5 min)** - [docs/quick-start.md](docs/quick-start.md) ⚡
 - **Storybook** - [https://beautysmile-design-system.vercel.app](https://beautysmile-design-system.vercel.app)
 - **Getting Started Guide** - [docs/getting-started.md](docs/getting-started.md)
 - **Component Reference** - [docs/components/README.md](docs/components/README.md)

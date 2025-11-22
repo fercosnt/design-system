@@ -84,7 +84,7 @@ export interface DetailViewTemplateProps {
    */
   status?: {
     label: string
-    variant?: 'default' | 'success' | 'warning' | 'error' | 'info'
+    variant?: 'default' | 'success' | 'warning' | 'error'
   }
   /**
    * Header image URL (optional)

@@ -130,8 +130,17 @@ const GlassCardFooter = React.forwardRef<
 ))
 GlassCardFooter.displayName = 'GlassCardFooter'
 
+// Compound component pattern
+const GlassCardNamespace = Object.assign(GlassCard, {
+  Header: GlassCardHeader,
+  Title: GlassCardTitle,
+  Description: GlassCardDescription,
+  Content: GlassCardContent,
+  Footer: GlassCardFooter,
+})
+
 export {
-  GlassCard,
+  GlassCardNamespace as GlassCard,
   GlassCardHeader,
   GlassCardTitle,
   GlassCardDescription,
