@@ -11,6 +11,9 @@ export * from './tokens'
 // Components
 export * from './components'
 
+// Assets
+export * from './assets'
+
 // Utilities
 export { cn } from './utils/cn'
 export { useIsMobile } from './utils/use-mobile'
