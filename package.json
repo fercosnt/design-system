@@ -131,10 +131,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beautysmile/design-system.git"
+    "url": "https://github.com/fercosnt/design-system.git"
   },
   "bugs": {
-    "url": "https://github.com/beautysmile/design-system/issues"
+    "url": "https://github.com/fercosnt/design-system/issues"
   },
-  "homepage": "https://github.com/beautysmile/design-system#readme"
+  "homepage": "https://github.com/fercosnt/design-system#readme"
 }
