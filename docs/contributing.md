@@ -6,7 +6,7 @@ Thank you for considering contributing to Beauty Smile Design System!
 
 ```bash
 # Clone the repository
-git clone https://github.com/beautysmile/design-system.git
+git clone https://github.com/fercosnt/design-system.git
 cd design-system
 
 # Install dependencies

@@ -22,17 +22,17 @@ Clone one of our pre-configured templates:
 
 ```bash
 # Admin Dashboard Template
-git clone https://github.com/beautysmile/design-system.git --branch admin-template my-admin-app
+git clone https://github.com/fercosnt/design-system.git --branch admin-template my-admin-app
 cd my-admin-app
 npm install
 
 # Public Platform Template
-git clone https://github.com/beautysmile/design-system.git --branch public-template my-public-app
+git clone https://github.com/fercosnt/design-system.git --branch public-template my-public-app
 cd my-public-app
 npm install
 
 # Hybrid Template (both themes)
-git clone https://github.com/beautysmile/design-system.git --branch hybrid-template my-app
+git clone https://github.com/fercosnt/design-system.git --branch hybrid-template my-app
 cd my-app
 npm install
 ```
@@ -480,7 +480,7 @@ export default defineConfig({
 - **Browse Components** - Explore the [Storybook](https://beautysmile-design-system.vercel.app) for all available components
 - **Read API Docs** - Check component props and usage in the Storybook docs
 - **View Examples** - See real-world usage in the [examples](../examples/) directory
-- **Join Community** - Get help on [GitHub Discussions](https://github.com/beautysmile/design-system/discussions)
+- **Join Community** - Get help on [GitHub Discussions](https://github.com/fercosnt/design-system/discussions)
 
 ---
 
@@ -490,8 +490,8 @@ export default defineConfig({
 - [Contributing Guide](../CONTRIBUTING.md) - How to contribute
 - [Changelog](../CHANGELOG.md) - Version history
 - [Storybook](https://beautysmile-design-system.vercel.app) - Interactive docs
-- [GitHub](https://github.com/beautysmile/design-system) - Source code
+- [GitHub](https://github.com/fercosnt/design-system) - Source code
 
 ---
 
-Need help? Open an issue on [GitHub](https://github.com/beautysmile/design-system/issues) or email design-system@beautysmile.com
+Need help? Open an issue on [GitHub](https://github.com/fercosnt/design-system/issues) or email design-system@beautysmile.com

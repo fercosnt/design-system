@@ -40,7 +40,7 @@ Copy one of the complete starter projects from the `templates/` directory:
 
 ```bash
 # Clone the repository
-git clone https://github.com/beautysmile/design-system.git
+git clone https://github.com/fercosnt/design-system.git
 cd design-system
 
 # Copy the template you need
@@ -202,7 +202,7 @@ beautysmile-design-system/
 
 ```bash
 # Clone repository
-git clone https://github.com/beautysmile/design-system.git
+git clone https://github.com/fercosnt/design-system.git
 cd design-system
 
 # Install dependencies
@@ -245,7 +245,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🔗 Links
 
-- **GitHub** - [https://github.com/beautysmile/design-system](https://github.com/beautysmile/design-system)
+- **GitHub** - [https://github.com/fercosnt/design-system](https://github.com/fercosnt/design-system)
 - **NPM** - [https://www.npmjs.com/package/@beautysmile/design-system](https://www.npmjs.com/package/@beautysmile/design-system)
 - **Storybook** - [https://beautysmile-design-system.vercel.app](https://beautysmile-design-system.vercel.app)
 - **Beauty Smile** - [https://beautysmile.com](https://beautysmile.com)

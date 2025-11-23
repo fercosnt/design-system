@@ -8,7 +8,7 @@ Get up and running with Beauty Smile Design System in 5 minutes.
 
 ```bash
 # Clone the repository
-git clone https://github.com/beautysmile/design-system.git
+git clone https://github.com/fercosnt/design-system.git
 cd design-system
 
 # Copy the template you need

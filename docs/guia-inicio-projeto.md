@@ -63,7 +63,7 @@ O Design System oferece 3 templates prontos:
 
 ```bash
 # 1. Clone o repositório do design system
-git clone https://github.com/beautysmile/design-system.git
+git clone https://github.com/fercosnt/design-system.git
 cd design-system
 
 # 2. Escolha e copie o template que você precisa:
@@ -475,7 +475,7 @@ function LoginPage() {
 
 ### 🎯 Recursos Úteis
 
-- **GitHub** - [https://github.com/beautysmile/design-system](https://github.com/beautysmile/design-system)
+- **GitHub** - [https://github.com/fercosnt/design-system](https://github.com/fercosnt/design-system)
 - **NPM** - [https://www.npmjs.com/package/@beautysmile/design-system](https://www.npmjs.com/package/@beautysmile/design-system)
 - **Contribuir** - Veja [CONTRIBUTING.md](../CONTRIBUTING.md)
 
@@ -601,7 +601,7 @@ Agora você está pronto para começar a construir com o **Beauty Smile Design S
 - Personalize conforme suas necessidades
 
 **Precisa de ajuda?**
-- Abra uma issue no [GitHub](https://github.com/beautysmile/design-system/issues)
+- Abra uma issue no [GitHub](https://github.com/fercosnt/design-system/issues)
 - Consulte a documentação completa
 - Explore os exemplos no repositório
 
