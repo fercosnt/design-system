@@ -9,7 +9,7 @@ import {
   AlertCircle,
   CheckCircle,
   AlertTriangle,
-  Info,
+  Info as InfoIcon,
 } from 'lucide-react'
 
 const meta = {
@@ -37,7 +37,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   render: () => (
     <Alert className="w-[400px]">
-      <Info className="h-4 w-4" />
+      <InfoIcon className="h-4 w-4" />
       <AlertTitle>Heads up!</AlertTitle>
       <AlertDescription>
         You can add components to your app using the cli.
@@ -86,7 +86,7 @@ export const Error: Story = {
 export const Info: Story = {
   render: () => (
     <Alert variant="info" className="w-[400px]">
-      <Info className="h-4 w-4" />
+      <InfoIcon className="h-4 w-4" />
       <AlertTitle>Information</AlertTitle>
       <AlertDescription>
         Check out our new features and updates.
@@ -102,7 +102,7 @@ export const Info: Story = {
 export const DescriptionOnly: Story = {
   render: () => (
     <Alert className="w-[400px]">
-      <Info className="h-4 w-4" />
+      <InfoIcon className="h-4 w-4" />
       <AlertDescription>
         Your session will expire in 5 minutes.
       </AlertDescription>
@@ -133,7 +133,7 @@ export const AllVariants: Story = {
   render: () => (
     <div className="space-y-4 p-8 w-[500px]">
       <Alert>
-        <Info className="h-4 w-4" />
+        <InfoIcon className="h-4 w-4" />
         <AlertTitle>Default</AlertTitle>
         <AlertDescription>
           This is the default variant of the alert component.
@@ -165,7 +165,7 @@ export const AllVariants: Story = {
       </Alert>
 
       <Alert variant="info">
-        <Info className="h-4 w-4" />
+        <InfoIcon className="h-4 w-4" />
         <AlertTitle>Information</AlertTitle>
         <AlertDescription>
           Here's some helpful information for you.
