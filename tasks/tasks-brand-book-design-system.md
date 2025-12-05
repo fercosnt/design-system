@@ -238,7 +238,7 @@ Update the file after completing each sub-task, not just after completing an ent
   - [x] 20.1 Analisar Sidebar existente nos templates Admin
   - [x] 20.2 Criar `src/components/navigation/Sidebar/Sidebar.tsx`
   - [x] 20.3 Criar `src/components/navigation/Sidebar/Sidebar.stories.tsx`
-  - [ ] 20.4 Criar `src/components/navigation/Sidebar/Sidebar.docs.md`
+  - [x] 20.4 Criar `src/components/navigation/Sidebar/Sidebar.docs.md`
   - [x] 20.5 Implementar variantes (collapsed, expanded)
   - [x] 20.6 Implementar suporte a items e subitems
   - [x] 20.7 Aplicar design tokens
@@ -248,7 +248,7 @@ Update the file after completing each sub-task, not just after completing an ent
   - [x] 21.1 Analisar MetricCard existente nos templates Dashboard
   - [x] 21.2 Criar `src/components/data-display/MetricCard/MetricCard.tsx`
   - [x] 21.3 Criar `src/components/data-display/MetricCard/MetricCard.stories.tsx`
-  - [ ] 21.4 Criar `src/components/data-display/MetricCard/MetricCard.docs.md`
+  - [x] 21.4 Criar `src/components/data-display/MetricCard/MetricCard.docs.md`
   - [x] 21.5 Implementar props (title, value, change, trend, icon)
   - [x] 21.6 Implementar variantes visuais
   - [x] 21.7 Aplicar design tokens
@@ -257,19 +257,19 @@ Update the file after completing each sub-task, not just after completing an ent
 - [x] 22.0 Criar e documentar ProgressBar (PRIORIDADE 3)
   - [x] 22.1 Criar `src/components/ui/ProgressBar/ProgressBar.tsx`
   - [x] 22.2 Criar `src/components/ui/ProgressBar/ProgressBar.stories.tsx`
-  - [ ] 22.3 Criar `src/components/ui/ProgressBar/ProgressBar.docs.md`
+  - [x] 22.3 Criar `src/components/ui/ProgressBar/ProgressBar.docs.md`
   - [x] 22.4 Implementar props (value, max, showLabel, variant, size)
   - [x] 22.5 Implementar animação de progresso
   - [x] 22.6 Aplicar design tokens
   - [x] 22.7 Adicionar ao barrel export
 
-- [ ] 23.0 Criar e documentar SectionHeader
-  - [ ] 23.1 Criar `src/components/ui/SectionHeader/SectionHeader.tsx`
-  - [ ] 23.2 Criar `src/components/ui/SectionHeader/SectionHeader.stories.tsx`
-  - [ ] 23.3 Criar `src/components/ui/SectionHeader/SectionHeader.docs.md`
-  - [ ] 23.4 Implementar props (title, subtitle, action, icon)
-  - [ ] 23.5 Aplicar design tokens
-  - [ ] 23.6 Adicionar ao barrel export
+- [x] 23.0 Criar e documentar SectionHeader
+  - [x] 23.1 Criar `src/components/ui/SectionHeader/SectionHeader.tsx`
+  - [x] 23.2 Criar `src/components/ui/SectionHeader/SectionHeader.stories.tsx`
+  - [x] 23.3 Criar `src/components/ui/SectionHeader/SectionHeader.docs.md`
+  - [x] 23.4 Implementar props (title, subtitle, action, icon)
+  - [x] 23.5 Aplicar design tokens
+  - [x] 23.6 Adicionar ao barrel export
 
 ### Fase 4: Templates & Polish
 

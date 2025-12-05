@@ -25,3 +25,6 @@ export * from './Table'
 
 // Progress
 export * from './ProgressBar'
+
+// Layout
+export * from './SectionHeader'
