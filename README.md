@@ -20,6 +20,10 @@ A comprehensive React component library and design system for Beauty Smile proje
 - **Glass Morphism** - Modern frosted glass UI effects
 - **TypeScript** - Full type safety and IntelliSense support
 - **Storybook** - Interactive component documentation
+- **Brand Book** - Complete design guidelines and documentation
+  - 10 MDX pages (Introduction, Brand Voice, Logo System, Typography, Colors, etc.)
+  - Interactive token displays with copy-to-clipboard
+  - Templates Gallery and Textures guide
 - **Tailwind CSS 4.x** - Utility-first styling with custom tokens
 - **Tree-shakeable** - Import only what you need
 
@@ -155,13 +159,18 @@ beautysmile-design-system/
 │   ├── tokens/           # Design tokens (colors, typography, etc.)
 │   ├── components/       # React components
 │   │   ├── ui/           # Base UI components (Button, Card, etc.)
-│   │   └── glass/        # Glass morphism components
+│   │   ├── glass/        # Glass morphism components
+│   │   ├── navigation/   # Navigation components (Sidebar)
+│   │   └── data-display/ # Data display components (MetricCard)
 │   ├── templates/        # Page templates
 │   │   ├── admin/        # Admin templates (7 templates)
 │   │   └── public/       # Public templates (5 templates)
+│   ├── brand-book/       # Brand Book documentation
+│   │   ├── components/   # Display components (13 utilities)
+│   │   └── *.mdx         # MDX pages (10 pages)
 │   ├── assets/           # Logo and image components
-│   │   ├── logos/        # SVG logo files
-│   │   ├── backgrounds/  # PNG background images
+│   │   ├── logos/        # SVG logo files (43 variations)
+│   │   ├── decorative/   # Decorative SVG elements
 │   │   └── components/   # Asset React components
 │   ├── utils/            # Utility functions (cn, etc.)
 │   └── styles/           # Global CSS
@@ -242,6 +251,23 @@ See [CHANGELOG.md](CHANGELOG.md) for version history and release notes.
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) for details.
+
+## 📖 Brand Book
+
+The Design System includes a comprehensive Brand Book accessible via Storybook:
+
+- **Introduction** - Overview, architecture, and getting started
+- **Brand Voice** - Archetypes, tone of voice, vocabulary
+- **Logo System** - 43 logo variations, usage guidelines
+- **Typography** - Font families, sizes, weights
+- **Colors** - Brand, semantic, theme palettes
+- **Spacing** - Scale, border radius, z-index
+- **Effects** - Shadows, elevation, focus states
+- **Iconography** - Lucide React icons by category
+- **Templates Gallery** - All 12 page templates
+- **Textures** - Gradients, glass morphism, decorative elements
+
+Run `npm run storybook` and navigate to "Brand Book" in the sidebar.
 
 ## 🔗 Links
 

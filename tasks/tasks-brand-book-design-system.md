@@ -273,36 +273,36 @@ Update the file after completing each sub-task, not just after completing an ent
 
 ### Fase 4: Templates & Polish
 
-- [ ] 24.0 Criar página TemplatesGallery.mdx
-  - [ ] 24.1 Criar `src/brand-book/TemplatesGallery.mdx`
-  - [ ] 24.2 Criar componente `TemplateCard.tsx` para exibir preview
-  - [ ] 24.3 Configurar geração automática de screenshots via Storybook
-  - [ ] 24.4 Adicionar seção Admin Templates (Login, Dashboard, CRUD, etc.)
-  - [ ] 24.5 Adicionar seção Public Templates (Landing, Login, Dashboard, etc.)
-  - [ ] 24.6 Adicionar links para stories de cada template
+- [x] 24.0 Criar página TemplatesGallery.mdx
+  - [x] 24.1 Criar `src/brand-book/TemplatesGallery.mdx`
+  - [x] 24.2 Criar componente `TemplateCard.tsx` para exibir preview
+  - [x] 24.3 Configurar geração automática de screenshots via Storybook
+  - [x] 24.4 Adicionar seção Admin Templates (Login, Dashboard, CRUD, etc.)
+  - [x] 24.5 Adicionar seção Public Templates (Landing, Login, Dashboard, etc.)
+  - [x] 24.6 Adicionar links para stories de cada template
 
-- [ ] 25.0 Criar página Textures.mdx
-  - [ ] 25.1 Criar `src/brand-book/Textures.mdx`
-  - [ ] 25.2 Adicionar seção Brand Gradients
-  - [ ] 25.3 Adicionar seção Background Images
-  - [ ] 25.4 Adicionar seção Decorative Elements (6 SVGs)
-  - [ ] 25.5 Adicionar seção Glass Morphism Effects
-  - [ ] 25.6 Adicionar Usage Examples
+- [x] 25.0 Criar página Textures.mdx
+  - [x] 25.1 Criar `src/brand-book/Textures.mdx`
+  - [x] 25.2 Adicionar seção Brand Gradients
+  - [x] 25.3 Adicionar seção Background Images
+  - [x] 25.4 Adicionar seção Decorative Elements (6 SVGs)
+  - [x] 25.5 Adicionar seção Glass Morphism Effects
+  - [x] 25.6 Adicionar Usage Examples
 
-- [ ] 26.0 Atualizar documentação existente
-  - [ ] 26.1 Atualizar `README.md` com link para Storybook Brand Book
-  - [ ] 26.2 Atualizar `docs/getting-started.md` com novas instruções
-  - [ ] 26.3 Atualizar `docs/design-principles.md` com referências ao Brand Book
-  - [ ] 26.4 Atualizar `docs/quick-start.md`
+- [x] 26.0 Atualizar documentação existente
+  - [x] 26.1 Atualizar `README.md` com link para Storybook Brand Book
+  - [x] 26.2 Atualizar `docs/getting-started.md` com novas instruções
+  - [x] 26.3 Atualizar `docs/design-principles.md` com referências ao Brand Book
+  - [x] 26.4 Atualizar `docs/quick-start.md`
 
-- [ ] 27.0 QA e testes finais
-  - [ ] 27.1 Testar build do Storybook: `npm run build-storybook`
-  - [ ] 27.2 Verificar todas as páginas MDX renderizam sem erros
-  - [ ] 27.3 Testar todos os botões copy-to-clipboard
-  - [ ] 27.4 Testar responsividade (mobile, tablet, desktop)
-  - [ ] 27.5 Verificar acessibilidade (navegação por teclado)
-  - [ ] 27.6 Testar links entre páginas
-  - [ ] 27.7 Verificar ordenação correta no sidebar
+- [x] 27.0 QA e testes finais
+  - [x] 27.1 Testar build do Storybook: `npm run build-storybook`
+  - [x] 27.2 Verificar todas as páginas MDX renderizam sem erros
+  - [x] 27.3 Testar todos os botões copy-to-clipboard
+  - [x] 27.4 Testar responsividade (mobile, tablet, desktop)
+  - [x] 27.5 Verificar acessibilidade (navegação por teclado)
+  - [x] 27.6 Testar links entre páginas
+  - [x] 27.7 Verificar ordenação correta no sidebar
 
 ### Fase 5: Finalização
 
