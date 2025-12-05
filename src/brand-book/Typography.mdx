@@ -1,0 +1,271 @@
+{/* Typography */}
+import { Meta } from '@storybook/blocks'
+import { TypographyDisplay, CopyButton } from './components'
+
+<Meta title="Brand Book/Typography" />
+
+# Typography
+
+O sistema tipografico da Beauty Smile utiliza duas familias complementares para criar hierarquia visual clara e leitura confortavel.
+
+---
+
+## Familias Tipograficas
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <h3 style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', margin: '0 0 8px 0' }}>Inter</h3>
+    <p style={{ fontSize: '14px', color: '#6B6D70', margin: '0 0 16px 0' }}>Corpo de texto, UI, labels</p>
+    <code style={{ fontSize: '12px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>font-family: 'Inter', sans-serif</code>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', margin: '0 0 8px 0' }}>Montserrat</h3>
+    <p style={{ fontSize: '14px', color: '#6B6D70', margin: '0 0 16px 0' }}>Headings, titulos, destaques</p>
+    <code style={{ fontSize: '12px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>font-family: 'Montserrat', sans-serif</code>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <h3 style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '24px', margin: '0 0 8px 0' }}>JetBrains Mono</h3>
+    <p style={{ fontSize: '14px', color: '#6B6D70', margin: '0 0 16px 0' }}>Codigo, valores tecnicos</p>
+    <code style={{ fontSize: '12px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>font-family: 'JetBrains Mono', monospace</code>
+  </div>
+</div>
+
+---
+
+## Escala de Tamanhos
+
+<div style={{ marginTop: '24px' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+    <thead>
+      <tr style={{ background: '#F8F9F9' }}>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Token</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Tamanho</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Line Height</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Preview</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-xs</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>12px (0.75rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>16px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '12px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-sm</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>14px (0.875rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>20px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '14px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-base</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>16px (1rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>24px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '16px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-lg</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>18px (1.125rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>28px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '18px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-xl</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>20px (1.25rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>28px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '20px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-2xl</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>24px (1.5rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>32px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '24px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-3xl</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>30px (1.875rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>36px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '30px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-4xl</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>36px (2.25rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>40px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '36px' }}>Beauty Smile</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>text-5xl</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>48px (3rem)</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>1</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '48px' }}>Beauty</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## Pesos de Fonte
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontWeight: 400, fontSize: '24px' }}>Regular</span>
+    <div style={{ fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>400 - font-normal</div>
+  </div>
+  <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontWeight: 500, fontSize: '24px' }}>Medium</span>
+    <div style={{ fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>500 - font-medium</div>
+  </div>
+  <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontWeight: 600, fontSize: '24px' }}>Semibold</span>
+    <div style={{ fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>600 - font-semibold</div>
+  </div>
+  <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontWeight: 700, fontSize: '24px' }}>Bold</span>
+    <div style={{ fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>700 - font-bold</div>
+  </div>
+  <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontWeight: 800, fontSize: '24px' }}>Extrabold</span>
+    <div style={{ fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>800 - font-extrabold</div>
+  </div>
+  <div style={{ padding: '20px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontWeight: 900, fontSize: '24px' }}>Black</span>
+    <div style={{ fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>900 - font-black</div>
+  </div>
+</div>
+
+---
+
+## Hierarquia de Headings
+
+<div style={{ padding: '32px', borderRadius: '12px', border: '1px solid #E8E9E8', marginTop: '24px' }}>
+  <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '48px', fontWeight: 700, margin: '0 0 24px 0', letterSpacing: '-0.025em' }}>
+    Heading 1 - 48px Bold
+  </h1>
+  <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '36px', fontWeight: 700, margin: '0 0 20px 0', letterSpacing: '-0.025em' }}>
+    Heading 2 - 36px Bold
+  </h2>
+  <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '30px', fontWeight: 600, margin: '0 0 16px 0', letterSpacing: '-0.025em' }}>
+    Heading 3 - 30px Semibold
+  </h3>
+  <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', fontWeight: 600, margin: '0 0 12px 0' }}>
+    Heading 4 - 24px Semibold
+  </h4>
+  <h5 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '20px', fontWeight: 500, margin: '0 0 8px 0' }}>
+    Heading 5 - 20px Medium
+  </h5>
+  <h6 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '18px', fontWeight: 500, margin: '0' }}>
+    Heading 6 - 18px Medium
+  </h6>
+</div>
+
+---
+
+## Estilos de Texto
+
+### Body Text
+
+<div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', marginTop: '16px' }}>
+  <p style={{ fontSize: '16px', lineHeight: 1.5, margin: '0 0 16px 0' }}>
+    <strong>Body (16px):</strong> A Beauty Smile e uma clinica odontologica premium especializada em harmonizacao orofacial e estetica dental. Nossa missao e transformar sorrisos.
+  </p>
+  <p style={{ fontSize: '14px', lineHeight: 1.5, margin: '0 0 16px 0', color: '#6B6D70' }}>
+    <strong>Body Small (14px):</strong> Texto secundario para descricoes, labels e informacoes complementares. Utiliza cor neutral-600 para hierarquia.
+  </p>
+  <p style={{ fontSize: '18px', lineHeight: 1.75, margin: '0' }}>
+    <strong>Body Large (18px):</strong> Para leads, introducoes e textos que precisam de destaque maior sem ser heading.
+  </p>
+</div>
+
+### Labels & Captions
+
+<div style={{ display: 'flex', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8' }}>
+    <label style={{ fontSize: '14px', fontWeight: 500, letterSpacing: '0.025em' }}>Label Text</label>
+    <div style={{ fontSize: '11px', color: '#6B6D70', marginTop: '4px' }}>14px medium, letter-spacing wide</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8' }}>
+    <span style={{ fontSize: '12px' }}>Caption Text</span>
+    <div style={{ fontSize: '11px', color: '#6B6D70', marginTop: '4px' }}>12px regular</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8' }}>
+    <code style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '14px' }}>Code Text</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70', marginTop: '4px' }}>14px monospace</div>
+  </div>
+</div>
+
+---
+
+## Letter Spacing
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `tracking-tighter` | -0.05em | Headings grandes |
+| `tracking-tight` | -0.025em | Headings |
+| `tracking-normal` | 0 | Corpo de texto |
+| `tracking-wide` | 0.025em | Labels, botoes |
+| `tracking-wider` | 0.05em | Caps, destaques |
+| `tracking-widest` | 0.1em | All caps |
+
+---
+
+## Line Height
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `leading-none` | 1 | Headings grandes |
+| `leading-tight` | 1.25 | Headings |
+| `leading-snug` | 1.375 | Subtitulos |
+| `leading-normal` | 1.5 | Corpo de texto |
+| `leading-relaxed` | 1.625 | Texto longo |
+| `leading-loose` | 2 | Espacamento generoso |
+
+---
+
+## Uso com Tailwind
+
+```tsx
+// Headings
+<h1 className="font-heading text-5xl font-bold tracking-tight">
+  Titulo Principal
+</h1>
+
+// Body text
+<p className="font-sans text-base leading-normal">
+  Texto do paragrafo com configuracao padrao.
+</p>
+
+// Labels
+<label className="font-sans text-sm font-medium tracking-wide">
+  Label do Campo
+</label>
+
+// Code
+<code className="font-mono text-sm">
+  console.log('Hello')
+</code>
+```
+
+---
+
+## Tokens TypeScript
+
+```typescript
+import { typography } from '@/tokens/typography'
+
+// Familias
+typography.fontFamily.sans    // Inter stack
+typography.fontFamily.heading // Montserrat stack
+typography.fontFamily.mono    // JetBrains Mono stack
+
+// Tamanhos
+typography.fontSize.base      // ['1rem', { lineHeight: '1.5rem' }]
+typography.fontSize['2xl']    // ['1.5rem', { lineHeight: '2rem' }]
+
+// Pesos
+typography.fontWeight.semibold // '600'
+typography.fontWeight.bold     // '700'
+
+// Headings pre-configurados
+typography.headings.h1 // { fontFamily, fontSize, lineHeight, fontWeight, letterSpacing }
+```

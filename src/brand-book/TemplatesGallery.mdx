@@ -1,0 +1,293 @@
+{/* TemplatesGallery.mdx */}
+import { Meta } from '@storybook/blocks'
+import { TemplateCard } from './components/TemplateCard'
+
+<Meta title="Brand Book/Templates Gallery" />
+
+# Templates Gallery
+
+Galeria de templates pré-construídos para acelerar o desenvolvimento de aplicações Beauty Smile.
+
+---
+
+## Visão Geral
+
+Os templates são layouts completos e funcionais que combinam múltiplos componentes do Design System.
+Eles servem como ponto de partida para páginas comuns e podem ser customizados conforme necessário.
+
+### Categorias
+
+| Categoria | Descrição | Tema |
+|-----------|-----------|------|
+| **Admin** | Área administrativa, backoffice | Azul profundo (Primary) |
+| **Public** | Área pública, cliente | Turquesa (Accent) |
+
+---
+
+## Admin Templates
+
+Templates para a área administrativa da aplicação.
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+  <TemplateCard
+    name="Login Admin"
+    description="Página de login para administradores com formulário de autenticação"
+    category="admin"
+    storyPath="templates-admin-loginadmintemplate--docs"
+    features={[
+      'Formulário de email/senha',
+      'Validação de campos',
+      'Link de recuperação',
+      'Logo da marca'
+    ]}
+  />
+
+  <TemplateCard
+    name="Dashboard Admin"
+    description="Painel principal com sidebar, métricas e área de conteúdo"
+    category="admin"
+    storyPath="templates-admin-dashboardadmintemplate--docs"
+    features={[
+      'Sidebar com navegação',
+      'Grid de métricas',
+      'Área para gráficos',
+      'Perfil do usuário'
+    ]}
+  />
+
+  <TemplateCard
+    name="CRUD Template"
+    description="Template genérico para operações Create, Read, Update, Delete"
+    category="admin"
+    storyPath="templates-admin-crudtemplate--docs"
+    features={[
+      'Formulário dinâmico',
+      'Validação',
+      'Botões de ação',
+      'Mensagens de feedback'
+    ]}
+  />
+
+  <TemplateCard
+    name="List with Filters"
+    description="Listagem de dados com busca, filtros e paginação"
+    category="admin"
+    storyPath="templates-admin-listwithfilterstemplate--docs"
+    features={[
+      'Campo de busca',
+      'Filtros avançados',
+      'Tabela de dados',
+      'Paginação',
+      'Ações em lote'
+    ]}
+  />
+
+  <TemplateCard
+    name="Detail View"
+    description="Visualização detalhada de um registro com abas e ações"
+    category="admin"
+    storyPath="templates-admin-detailviewtemplate--docs"
+    features={[
+      'Header com ações',
+      'Abas de conteúdo',
+      'Informações organizadas',
+      'Histórico de atividades'
+    ]}
+  />
+
+  <TemplateCard
+    name="Profile Template"
+    description="Página de perfil do usuário com edição de dados"
+    category="admin"
+    storyPath="templates-admin-profiletemplate--docs"
+    features={[
+      'Avatar com upload',
+      'Formulário de dados',
+      'Modo visualização/edição',
+      'Alteração de senha'
+    ]}
+  />
+
+  <TemplateCard
+    name="Settings Template"
+    description="Página de configurações com seções organizadas"
+    category="admin"
+    storyPath="templates-admin-settingstemplate--docs"
+    features={[
+      'Navegação por seções',
+      'Formulários por categoria',
+      'Toggle switches',
+      'Salvar/cancelar'
+    ]}
+  />
+</div>
+
+---
+
+## Public Templates
+
+Templates para a área pública e clientes.
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+  <TemplateCard
+    name="Landing Page"
+    description="Página inicial com hero, features e call-to-action"
+    category="public"
+    storyPath="templates-public-landingpagetemplate--docs"
+    features={[
+      'Hero section',
+      'Grid de features',
+      'Seção de benefícios',
+      'Call-to-action',
+      'Footer'
+    ]}
+  />
+
+  <TemplateCard
+    name="Login Public"
+    description="Página de login para clientes com visual acolhedor"
+    category="public"
+    storyPath="templates-public-loginpublictemplate--docs"
+    features={[
+      'Formulário de login',
+      'Cadastro integrado',
+      'Login social',
+      'Design acolhedor'
+    ]}
+  />
+
+  <TemplateCard
+    name="Dashboard Client"
+    description="Painel do cliente com informações e agendamentos"
+    category="public"
+    storyPath="templates-public-dashboardclienttemplate--docs"
+    features={[
+      'Resumo de informações',
+      'Próximos agendamentos',
+      'Histórico',
+      'Ações rápidas'
+    ]}
+  />
+
+  <TemplateCard
+    name="Multi-Step Form"
+    description="Formulário em múltiplas etapas com progresso visual"
+    category="public"
+    storyPath="templates-public-multistepformtemplate--docs"
+    features={[
+      'Indicador de progresso',
+      'Navegação entre etapas',
+      'Validação por etapa',
+      'Resumo final'
+    ]}
+  />
+
+  <TemplateCard
+    name="Public Profile"
+    description="Perfil público do profissional ou clínica"
+    category="public"
+    storyPath="templates-public-publicprofiletemplate--docs"
+    features={[
+      'Foto e bio',
+      'Especialidades',
+      'Avaliações',
+      'Contato'
+    ]}
+  />
+</div>
+
+---
+
+## Como Usar
+
+### Importando um Template
+
+```tsx
+import { DashboardAdminTemplate } from '@/templates/admin'
+
+function AdminDashboard() {
+  return (
+    <DashboardAdminTemplate
+      title="Dashboard"
+      userName="Dr. João Silva"
+      metrics={[
+        { title: 'Pacientes', value: '1,234' },
+        { title: 'Consultas Hoje', value: '12' },
+      ]}
+      navItems={[
+        { label: 'Dashboard', isActive: true },
+        { label: 'Pacientes' },
+        { label: 'Configurações' },
+      ]}
+    >
+      {/* Seu conteúdo */}
+    </DashboardAdminTemplate>
+  )
+}
+```
+
+### Customizando Templates
+
+Os templates aceitam diversas props para customização:
+
+1. **Conteúdo**: Passe elementos via `children` ou props específicas
+2. **Navegação**: Configure itens de menu via `navItems`
+3. **Ações**: Adicione callbacks como `onSubmit`, `onCancel`, etc.
+4. **Estilo**: Use `className` para estilos adicionais
+
+---
+
+## Estrutura de Arquivos
+
+```
+src/templates/
+├── admin/
+│   ├── LoginAdminTemplate.tsx
+│   ├── DashboardAdminTemplate.tsx
+│   ├── CRUDTemplate.tsx
+│   ├── SettingsTemplate.tsx
+│   ├── DetailViewTemplate.tsx
+│   ├── ProfileTemplate.tsx
+│   ├── ListWithFiltersTemplate.tsx
+│   └── index.ts
+├── public/
+│   ├── LandingPageTemplate.tsx
+│   ├── LoginPublicTemplate.tsx
+│   ├── DashboardClientTemplate.tsx
+│   ├── MultiStepFormTemplate.tsx
+│   ├── PublicProfileTemplate.tsx
+│   └── index.ts
+└── index.ts
+```
+
+---
+
+## Princípios de Design
+
+### Consistência
+Todos os templates seguem os mesmos padrões de:
+- Espaçamento (scale de 4px)
+- Tipografia (Inter para texto, Montserrat para headings)
+- Cores (paleta brand)
+- Componentes (do Design System)
+
+### Responsividade
+Templates são responsivos por padrão:
+- Mobile: Layout em coluna única
+- Tablet: Layouts adaptados
+- Desktop: Layouts completos com sidebar
+
+### Acessibilidade
+- Navegação por teclado
+- Estrutura semântica de headings
+- Labels em formulários
+- Contraste adequado
+
+---
+
+## Próximos Passos
+
+1. Navegue pelos templates no Storybook
+2. Identifique o template mais adequado
+3. Importe e customize conforme necessário
+4. Consulte a documentação de cada componente para detalhes

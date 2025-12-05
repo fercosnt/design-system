@@ -1,0 +1,255 @@
+{/* Logo System */}
+import { Meta } from '@storybook/blocks'
+import { LogoGrid, Logo3DShowcase, CopyButton } from './components'
+
+<Meta title="Brand Book/Logo System" />
+
+# Logo System
+
+O sistema de logos da Beauty Smile oferece versatilidade para diferentes aplicacoes mantendo a consistencia visual da marca.
+
+---
+
+## Variacoes do Logo
+
+Disponibilizamos o logo em quatro formatos principais:
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center', padding: '24px', border: '1px solid #E8E9E8', borderRadius: '12px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-azul.svg" alt="Logo Horizontal" style={{ maxWidth: '100%', height: '40px', objectFit: 'contain' }} />
+    <h4 style={{ margin: '16px 0 8px 0', fontSize: '14px' }}>Horizontal</h4>
+    <p style={{ margin: 0, fontSize: '12px', color: '#6B6D70' }}>Uso principal em headers e materiais digitais</p>
+  </div>
+  <div style={{ textAlign: 'center', padding: '24px', border: '1px solid #E8E9E8', borderRadius: '12px' }}>
+    <img src="/logos/svg/vertical/Beauty-Smile-logo-vertical-azul.svg" alt="Logo Vertical" style={{ maxWidth: '100%', height: '60px', objectFit: 'contain' }} />
+    <h4 style={{ margin: '16px 0 8px 0', fontSize: '14px' }}>Vertical</h4>
+    <p style={{ margin: 0, fontSize: '12px', color: '#6B6D70' }}>Ideal para espacos quadrados e materiais impressos</p>
+  </div>
+  <div style={{ textAlign: 'center', padding: '24px', border: '1px solid #E8E9E8', borderRadius: '12px' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-azul.svg" alt="Isotipo" style={{ maxWidth: '100%', height: '48px', objectFit: 'contain' }} />
+    <h4 style={{ margin: '16px 0 8px 0', fontSize: '14px' }}>Isotipo</h4>
+    <p style={{ margin: 0, fontSize: '12px', color: '#6B6D70' }}>Simbolo isolado para icones e favicons</p>
+  </div>
+  <div style={{ textAlign: 'center', padding: '24px', border: '1px solid #E8E9E8', borderRadius: '12px' }}>
+    <img src="/logos/svg/tipografico/Beauty-Smile-tipografico-azul.svg" alt="Tipografico" style={{ maxWidth: '100%', height: '32px', objectFit: 'contain' }} />
+    <h4 style={{ margin: '16px 0 8px 0', fontSize: '14px' }}>Tipografico</h4>
+    <p style={{ margin: 0, fontSize: '12px', color: '#6B6D70' }}>Apenas o nome da marca</p>
+  </div>
+</div>
+
+---
+
+## Cores Disponiveis
+
+Cada variacao do logo esta disponivel em 6 cores para diferentes contextos de aplicacao:
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '100%', aspectRatio: '1', borderRadius: '12px', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+      <span style={{ color: 'white', fontSize: '12px' }}>SVG</span>
+    </div>
+    <strong style={{ fontSize: '12px' }}>Azul</strong>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>#00109E</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '100%', aspectRatio: '1', borderRadius: '12px', background: '#FFFFFF', border: '1px solid #E8E9E8', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+      <span style={{ color: '#6B6D70', fontSize: '12px' }}>SVG</span>
+    </div>
+    <strong style={{ fontSize: '12px' }}>Branco</strong>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>#FFFFFF</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '100%', aspectRatio: '1', borderRadius: '12px', background: '#6B6D70', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+      <span style={{ color: 'white', fontSize: '12px' }}>SVG</span>
+    </div>
+    <strong style={{ fontSize: '12px' }}>Cinza</strong>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>#6B6D70</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '100%', aspectRatio: '1', borderRadius: '12px', background: 'linear-gradient(135deg, #BB965B, #D4AF37)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+      <span style={{ color: 'white', fontSize: '12px' }}>SVG</span>
+    </div>
+    <strong style={{ fontSize: '12px' }}>Dourado</strong>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>#BB965B</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '100%', aspectRatio: '1', borderRadius: '12px', background: '#2D2E30', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+      <span style={{ color: 'white', fontSize: '12px' }}>SVG</span>
+    </div>
+    <strong style={{ fontSize: '12px' }}>Preto</strong>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>#2D2E30</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '100%', aspectRatio: '1', borderRadius: '12px', background: '#35BFAD', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+      <span style={{ color: 'white', fontSize: '12px' }}>SVG</span>
+    </div>
+    <strong style={{ fontSize: '12px' }}>Turquesa</strong>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>#35BFAD</div>
+  </div>
+</div>
+
+---
+
+## Logos Horizontais
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '16px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-azul.svg" alt="Horizontal Azul" style={{ maxWidth: '80%', height: '40px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-branco.svg" alt="Horizontal Branco" style={{ maxWidth: '80%', height: '40px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-cinza.svg" alt="Horizontal Cinza" style={{ maxWidth: '80%', height: '40px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#2D2E30', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-dourado.svg" alt="Horizontal Dourado" style={{ maxWidth: '80%', height: '40px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-preto.svg" alt="Horizontal Preto" style={{ maxWidth: '80%', height: '40px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-turquesa.svg" alt="Horizontal Turquesa" style={{ maxWidth: '80%', height: '40px', objectFit: 'contain' }} />
+  </div>
+</div>
+
+---
+
+## Logos Verticais
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginTop: '16px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '120px' }}>
+    <img src="/logos/svg/vertical/Beauty-Smile-logo-vertical-azul.svg" alt="Vertical Azul" style={{ maxWidth: '80%', height: '80px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '120px' }}>
+    <img src="/logos/svg/vertical/Beauty-Smile-logo-vertical-branco.svg" alt="Vertical Branco" style={{ maxWidth: '80%', height: '80px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#2D2E30', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '120px' }}>
+    <img src="/logos/svg/vertical/Beauty-Smile-logo-vertical-dourado.svg" alt="Vertical Dourado" style={{ maxWidth: '80%', height: '80px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '120px' }}>
+    <img src="/logos/svg/vertical/Beauty-Smile-logo-vertical-turquesa.svg" alt="Vertical Turquesa" style={{ maxWidth: '80%', height: '80px', objectFit: 'contain' }} />
+  </div>
+</div>
+
+---
+
+## Isotipos
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '16px', marginTop: '16px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', aspectRatio: '1' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-azul.svg" alt="Isotipo Azul" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', aspectRatio: '1' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-branco.svg" alt="Isotipo Branco" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', aspectRatio: '1' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-cinza.svg" alt="Isotipo Cinza" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#2D2E30', display: 'flex', alignItems: 'center', justifyContent: 'center', aspectRatio: '1' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-dourado.svg" alt="Isotipo Dourado" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', aspectRatio: '1' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-preto.svg" alt="Isotipo Preto" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center', aspectRatio: '1' }}>
+    <img src="/logos/svg/isotipo/Beauty-Smile-isotipo-turquesa.svg" alt="Isotipo Turquesa" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+  </div>
+</div>
+
+---
+
+## Logos 3D Metalicos
+
+Versoes tridimensionais com efeitos metalicos para aplicacoes premium e materiais de destaque.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '32px', borderRadius: '16px', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '160px' }}>
+    <img src="/logos/3d-webp/Beauty-Smile-logo-horizontal-3D-ouro.webp" alt="3D Horizontal Ouro" style={{ maxWidth: '90%', height: '60px', objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.4))' }} />
+  </div>
+  <div style={{ padding: '32px', borderRadius: '16px', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '160px' }}>
+    <img src="/logos/3d-webp/Beauty-Smile-logo-horizontal-3D-prata.webp" alt="3D Horizontal Prata" style={{ maxWidth: '90%', height: '60px', objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.4))' }} />
+  </div>
+  <div style={{ padding: '32px', borderRadius: '16px', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '160px' }}>
+    <img src="/logos/3d-webp/Beauty-Smile-logo-vertical-3D-ouro.webp" alt="3D Vertical Ouro" style={{ maxWidth: '80%', height: '100px', objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.4))' }} />
+  </div>
+</div>
+
+---
+
+## Especificacoes Tecnicas
+
+### Tamanhos Minimos
+
+| Formato | Digital (px) | Impresso (mm) |
+|---------|--------------|---------------|
+| Horizontal | 120px | 30mm |
+| Vertical | 80px | 20mm |
+| Isotipo | 32px | 8mm |
+| Tipografico | 100px | 25mm |
+
+### Area de Protecao
+
+O espaco ao redor do logo deve ser no minimo equivalente a altura do simbolo (isotipo) em todos os lados.
+
+<div style={{ padding: '40px', background: '#F8F9F9', borderRadius: '12px', marginTop: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+  <div style={{ border: '2px dashed #35BFAD', padding: '40px', borderRadius: '8px' }}>
+    <img src="/logos/svg/horizontal/Beauty-Smile-logo-horizontal-azul.svg" alt="Area de protecao" style={{ height: '40px' }} />
+  </div>
+</div>
+<p style={{ textAlign: 'center', fontSize: '12px', color: '#6B6D70', marginTop: '8px' }}>A linha tracejada indica a area de protecao minima</p>
+
+---
+
+## Uso Correto vs Incorreto
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F0FDF4', border: '1px solid #BBF7D0' }}>
+    <h4 style={{ color: '#16A34A', margin: '0 0 16px 0' }}>Uso Correto</h4>
+    <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: 1.8 }}>
+      <li>Use as cores oficiais do logo</li>
+      <li>Mantenha as proporcoes originais</li>
+      <li>Respeite a area de protecao</li>
+      <li>Use fundos que garantam contraste</li>
+      <li>Prefira versoes vetoriais (SVG)</li>
+    </ul>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#FEF2F2', border: '1px solid #FECACA' }}>
+    <h4 style={{ color: '#DC2626', margin: '0 0 16px 0' }}>Nao Faca</h4>
+    <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: 1.8 }}>
+      <li>Alterar as cores do logo</li>
+      <li>Distorcer ou esticar o logo</li>
+      <li>Adicionar sombras ou efeitos</li>
+      <li>Usar em fundos sem contraste</li>
+      <li>Reduzir abaixo do tamanho minimo</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Download de Assets
+
+Para acessar todos os arquivos de logo, consulte a pasta `src/assets/logos/` do projeto.
+
+```tsx
+// Importar logos via TypeScript
+import { logoSpecs, logoAssets } from '@/assets/logos'
+
+// Exemplo de uso
+<img src={logoAssets.horizontal.azul} alt="Beauty Smile" />
+```
+
+### Estrutura de Arquivos
+
+```
+src/assets/logos/
+├── svg/
+│   ├── horizontal/      # 8 arquivos
+│   ├── vertical/        # 13 arquivos
+│   ├── isotipo/         # 12 arquivos
+│   └── tipografico/     # 8 arquivos
+├── 3d-png/              # 15 arquivos
+├── 3d-webp/             # 17 arquivos
+└── index.ts             # Exports tipados
+```

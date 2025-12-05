@@ -52,3 +52,11 @@ Thumbs.db
 .cache
 .temp
 tmp
+.vercel
+
+# Source assets (processed into src/assets/)
+Artes/
+Beauty Smile/
+
+# AI development tasks
+ai-dev-tasks/

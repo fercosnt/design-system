@@ -1,0 +1,371 @@
+{/* Colors */}
+import { Meta } from '@storybook/blocks'
+import { ColorSwatch, CopyButton } from './components'
+
+<Meta title="Brand Book/Colors" />
+
+# Colors
+
+A paleta de cores da Beauty Smile reflete nossa identidade: profissionalismo (azul), inovacao (turquesa), premium (dourado) e clareza (neutrals).
+
+---
+
+## Cores de Marca
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '120px', background: '#00109E' }} />
+    <div style={{ padding: '16px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '16px' }}>Primary (Deep Blue)</h4>
+      <p style={{ margin: '0 0 12px 0', fontSize: '12px', color: '#6B6D70' }}>Admin theme, CTAs, headers, navegacao</p>
+      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+        <code style={{ fontSize: '11px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>#00109E</code>
+        <code style={{ fontSize: '11px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>bg-primary</code>
+      </div>
+    </div>
+  </div>
+  <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '120px', background: '#35BFAD' }} />
+    <div style={{ padding: '16px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '16px' }}>Accent (Turquoise)</h4>
+      <p style={{ margin: '0 0 12px 0', fontSize: '12px', color: '#6B6D70' }}>Public theme, elementos interativos</p>
+      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+        <code style={{ fontSize: '11px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>#35BFAD</code>
+        <code style={{ fontSize: '11px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>bg-accent</code>
+      </div>
+    </div>
+  </div>
+  <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '120px', background: 'linear-gradient(135deg, #BB965B, #D4AF37)' }} />
+    <div style={{ padding: '16px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '16px' }}>Secondary (Gold)</h4>
+      <p style={{ margin: '0 0 12px 0', fontSize: '12px', color: '#6B6D70' }}>Acentos premium, destaques especiais</p>
+      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+        <code style={{ fontSize: '11px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>#BB965B</code>
+        <code style={{ fontSize: '11px', background: '#F8F9F9', padding: '4px 8px', borderRadius: '4px' }}>bg-secondary</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## Estados das Cores de Marca
+
+<div style={{ marginTop: '24px' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+    <thead>
+      <tr style={{ background: '#F8F9F9' }}>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Cor</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Default</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Hover</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Active</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>Primary</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#00109E' }} />
+            <code style={{ fontSize: '11px' }}>#00109E</code>
+          </div>
+        </td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#000C7A' }} />
+            <code style={{ fontSize: '11px' }}>#000C7A</code>
+          </div>
+        </td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#000958' }} />
+            <code style={{ fontSize: '11px' }}>#000958</code>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>Accent</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#35BFAD' }} />
+            <code style={{ fontSize: '11px' }}>#35BFAD</code>
+          </div>
+        </td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#2DA89A' }} />
+            <code style={{ fontSize: '11px' }}>#2DA89A</code>
+          </div>
+        </td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#259187' }} />
+            <code style={{ fontSize: '11px' }}>#259187</code>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>Secondary</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#BB965B' }} />
+            <code style={{ fontSize: '11px' }}>#BB965B</code>
+          </div>
+        </td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#A68350' }} />
+            <code style={{ fontSize: '11px' }}>#A68350</code>
+          </div>
+        </td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ width: '24px', height: '24px', borderRadius: '4px', background: '#917045' }} />
+            <code style={{ fontSize: '11px' }}>#917045</code>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## Escala de Neutrals
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#FFFFFF', border: '1px solid #E8E9E8', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>white</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#FFFFFF</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#F8F9F9', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>50</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#F8F9F9</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#F1F2F2', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>100</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#F1F2F2</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#E8E9E8', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>200</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#E8E9E8</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#D6D7D5', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>300</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#D6D7D5</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#BFC0BE', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>400</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#BFC0BE</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#A5A7A9', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>500</code>
+    <div style={{ fontSize: '10px', color: '#6B6D70' }}>#A5A7A9</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#86898C', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>600</code>
+    <div style={{ fontSize: '10px', color: '#FFFFFF' }}>#86898C</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#6B6D70', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>700</code>
+    <div style={{ fontSize: '10px', color: '#FFFFFF' }}>#6B6D70</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#4A4C4E', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>800</code>
+    <div style={{ fontSize: '10px', color: '#FFFFFF' }}>#4A4C4E</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#2D2E30', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>900</code>
+    <div style={{ fontSize: '10px', color: '#FFFFFF' }}>#2D2E30</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ height: '60px', borderRadius: '8px', background: '#000000', marginBottom: '8px' }} />
+    <code style={{ fontSize: '10px' }}>black</code>
+    <div style={{ fontSize: '10px', color: '#FFFFFF' }}>#000000</div>
+  </div>
+</div>
+
+---
+
+## Cores Semanticas
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '60px', background: '#10B981' }} />
+    <div style={{ padding: '12px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '14px' }}>Success</h4>
+      <code style={{ fontSize: '11px' }}>#10B981</code>
+    </div>
+  </div>
+  <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '60px', background: '#F59E0B' }} />
+    <div style={{ padding: '12px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '14px' }}>Warning</h4>
+      <code style={{ fontSize: '11px' }}>#F59E0B</code>
+    </div>
+  </div>
+  <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '60px', background: '#EF4444' }} />
+    <div style={{ padding: '12px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '14px' }}>Error</h4>
+      <code style={{ fontSize: '11px' }}>#EF4444</code>
+    </div>
+  </div>
+  <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E8E9E8' }}>
+    <div style={{ height: '60px', background: '#35BFAD' }} />
+    <div style={{ padding: '12px' }}>
+      <h4 style={{ margin: '0 0 4px 0', fontSize: '14px' }}>Info</h4>
+      <code style={{ fontSize: '11px' }}>#35BFAD</code>
+    </div>
+  </div>
+</div>
+
+---
+
+## Cores para Graficos
+
+<div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
+  <div style={{ flex: 1, height: '80px', borderRadius: '8px', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: '12px', opacity: 0.8 }}>Chart 1</div>
+      <div style={{ fontSize: '11px' }}>#00109E</div>
+    </div>
+  </div>
+  <div style={{ flex: 1, height: '80px', borderRadius: '8px', background: '#35BFAD', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: '12px', opacity: 0.8 }}>Chart 2</div>
+      <div style={{ fontSize: '11px' }}>#35BFAD</div>
+    </div>
+  </div>
+  <div style={{ flex: 1, height: '80px', borderRadius: '8px', background: '#BB965B', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: '12px', opacity: 0.8 }}>Chart 3</div>
+      <div style={{ fontSize: '11px' }}>#BB965B</div>
+    </div>
+  </div>
+  <div style={{ flex: 1, height: '80px', borderRadius: '8px', background: '#10B981', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: '12px', opacity: 0.8 }}>Chart 4</div>
+      <div style={{ fontSize: '11px' }}>#10B981</div>
+    </div>
+  </div>
+  <div style={{ flex: 1, height: '80px', borderRadius: '8px', background: '#F59E0B', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: '12px', opacity: 0.8 }}>Chart 5</div>
+      <div style={{ fontSize: '11px' }}>#F59E0B</div>
+    </div>
+  </div>
+</div>
+
+---
+
+## Temas
+
+### Admin Theme (Dark Blue)
+
+<div style={{ padding: '24px', borderRadius: '12px', background: '#00109E', color: 'white', marginTop: '16px' }}>
+  <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+    <div style={{ width: '60px', height: '60px', borderRadius: '8px', background: '#2D2E30' }} />
+    <div>
+      <h4 style={{ margin: '0 0 4px 0' }}>Sidebar Background</h4>
+      <code style={{ fontSize: '12px', opacity: 0.8 }}>#2D2E30 (neutral-900)</code>
+    </div>
+  </div>
+</div>
+
+### Public Theme (Gradient)
+
+<div style={{ padding: '24px', borderRadius: '12px', background: 'linear-gradient(135deg, #35BFAD 0%, #00109E 100%)', color: 'white', marginTop: '16px' }}>
+  <h4 style={{ margin: '0 0 8px 0' }}>Gradient Background</h4>
+  <code style={{ fontSize: '12px', opacity: 0.8 }}>linear-gradient(135deg, #35BFAD 0%, #00109E 100%)</code>
+</div>
+
+---
+
+## Glass Morphism
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', background: 'linear-gradient(135deg, #35BFAD 0%, #00109E 100%)' }}>
+    <div style={{ padding: '24px', borderRadius: '8px', background: 'rgba(255, 255, 255, 0.15)', backdropFilter: 'blur(10px)', color: 'white', textAlign: 'center' }}>
+      <div style={{ fontSize: '14px', fontWeight: 500 }}>Glass White 15%</div>
+      <code style={{ fontSize: '11px', opacity: 0.8 }}>rgba(255,255,255,0.15)</code>
+    </div>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: 'linear-gradient(135deg, #35BFAD 0%, #00109E 100%)' }}>
+    <div style={{ padding: '24px', borderRadius: '8px', background: 'rgba(255, 255, 255, 0.25)', backdropFilter: 'blur(10px)', color: 'white', textAlign: 'center' }}>
+      <div style={{ fontSize: '14px', fontWeight: 500 }}>Glass White Hover 25%</div>
+      <code style={{ fontSize: '11px', opacity: 0.8 }}>rgba(255,255,255,0.25)</code>
+    </div>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: 'linear-gradient(135deg, #35BFAD 0%, #00109E 100%)' }}>
+    <div style={{ padding: '24px', borderRadius: '8px', background: 'rgba(0, 0, 0, 0.30)', backdropFilter: 'blur(10px)', color: 'white', textAlign: 'center' }}>
+      <div style={{ fontSize: '14px', fontWeight: 500 }}>Glass Dark 30%</div>
+      <code style={{ fontSize: '11px', opacity: 0.8 }}>rgba(0,0,0,0.30)</code>
+    </div>
+  </div>
+</div>
+
+---
+
+## Uso com Tailwind
+
+```tsx
+// Cores de marca
+<div className="bg-primary text-white">Primary</div>
+<div className="bg-accent text-white">Accent</div>
+<div className="bg-secondary text-white">Secondary</div>
+
+// Neutrals
+<div className="bg-neutral-50 text-neutral-900">Light bg</div>
+<div className="bg-neutral-900 text-white">Dark bg</div>
+
+// Semanticas
+<div className="bg-success text-white">Success</div>
+<div className="bg-warning text-white">Warning</div>
+<div className="bg-error text-white">Error</div>
+
+// Hover states
+<button className="bg-primary hover:bg-primary-hover">
+  Button
+</button>
+```
+
+---
+
+## Tokens TypeScript
+
+```typescript
+import { colors } from '@/tokens/colors'
+
+// Brand colors
+colors.primary.DEFAULT  // '#00109E'
+colors.primary.hover    // '#000C7A'
+colors.accent.DEFAULT   // '#35BFAD'
+colors.secondary.DEFAULT // '#BB965B'
+
+// Neutrals
+colors.neutral.white    // '#FFFFFF'
+colors.neutral[500]     // '#A5A7A9'
+colors.neutral[900]     // '#2D2E30'
+
+// Semantic
+colors.success.DEFAULT  // '#10B981'
+colors.warning.DEFAULT  // '#F59E0B'
+colors.error.DEFAULT    // '#EF4444'
+
+// Glass
+colors.glass.background.white     // 'rgba(255, 255, 255, 0.15)'
+colors.glass.background.whiteHover // 'rgba(255, 255, 255, 0.25)'
+```

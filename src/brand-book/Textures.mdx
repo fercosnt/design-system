@@ -1,0 +1,355 @@
+{/* Textures.mdx */}
+import { Meta } from '@storybook/blocks'
+import { CopyButton } from './components/CopyButton'
+
+<Meta title="Brand Book/Textures & Backgrounds" />
+
+# Textures & Backgrounds
+
+Texturas, gradientes e efeitos visuais que compõem a identidade visual Beauty Smile.
+
+---
+
+## Brand Gradients
+
+Gradientes oficiais da marca para fundos, overlays e elementos decorativos.
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+  <div className="rounded-lg overflow-hidden">
+    <div
+      className="h-32 flex items-center justify-center text-white font-semibold"
+      style={{ background: 'linear-gradient(135deg, #00109E 0%, #35BFAD 100%)' }}
+    >
+      Primary to Accent
+    </div>
+    <div className="p-4 bg-white border border-neutral-200 border-t-0 rounded-b-lg">
+      <p className="text-sm font-mono text-neutral-600 mb-2">
+        linear-gradient(135deg, #00109E 0%, #35BFAD 100%)
+      </p>
+      <CopyButton value="linear-gradient(135deg, #00109E 0%, #35BFAD 100%)" label="Copiar CSS" size="sm" />
+    </div>
+  </div>
+
+  <div className="rounded-lg overflow-hidden">
+    <div
+      className="h-32 flex items-center justify-center text-white font-semibold"
+      style={{ background: 'linear-gradient(180deg, #00109E 0%, #000C7A 100%)' }}
+    >
+      Primary Dark
+    </div>
+    <div className="p-4 bg-white border border-neutral-200 border-t-0 rounded-b-lg">
+      <p className="text-sm font-mono text-neutral-600 mb-2">
+        linear-gradient(180deg, #00109E 0%, #000C7A 100%)
+      </p>
+      <CopyButton value="linear-gradient(180deg, #00109E 0%, #000C7A 100%)" label="Copiar CSS" size="sm" />
+    </div>
+  </div>
+
+  <div className="rounded-lg overflow-hidden">
+    <div
+      className="h-32 flex items-center justify-center text-white font-semibold"
+      style={{ background: 'linear-gradient(135deg, #35BFAD 0%, #2DA89A 50%, #259187 100%)' }}
+    >
+      Accent Depth
+    </div>
+    <div className="p-4 bg-white border border-neutral-200 border-t-0 rounded-b-lg">
+      <p className="text-sm font-mono text-neutral-600 mb-2">
+        linear-gradient(135deg, #35BFAD 0%, #2DA89A 50%, #259187 100%)
+      </p>
+      <CopyButton value="linear-gradient(135deg, #35BFAD 0%, #2DA89A 50%, #259187 100%)" label="Copiar CSS" size="sm" />
+    </div>
+  </div>
+
+  <div className="rounded-lg overflow-hidden">
+    <div
+      className="h-32 flex items-center justify-center text-neutral-800 font-semibold"
+      style={{ background: 'linear-gradient(135deg, #BB965B 0%, #D4AF37 50%, #BB965B 100%)' }}
+    >
+      Gold Shine
+    </div>
+    <div className="p-4 bg-white border border-neutral-200 border-t-0 rounded-b-lg">
+      <p className="text-sm font-mono text-neutral-600 mb-2">
+        linear-gradient(135deg, #BB965B 0%, #D4AF37 50%, #BB965B 100%)
+      </p>
+      <CopyButton value="linear-gradient(135deg, #BB965B 0%, #D4AF37 50%, #BB965B 100%)" label="Copiar CSS" size="sm" />
+    </div>
+  </div>
+</div>
+
+---
+
+## Glass Morphism Effects
+
+Efeitos de vidro fosco para criar camadas visuais sofisticadas.
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+  <div className="rounded-lg overflow-hidden">
+    <div
+      className="h-40 flex items-center justify-center relative"
+      style={{ background: 'linear-gradient(135deg, #00109E 0%, #35BFAD 100%)' }}
+    >
+      <div
+        className="px-6 py-4 rounded-lg text-white font-medium"
+        style={{
+          background: 'rgba(255, 255, 255, 0.15)',
+          backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(255, 255, 255, 0.2)'
+        }}
+      >
+        Glass Light
+      </div>
+    </div>
+    <div className="p-4 bg-white border border-neutral-200 border-t-0 rounded-b-lg">
+      <p className="text-xs font-mono text-neutral-600 mb-2">
+        background: rgba(255, 255, 255, 0.15);<br />
+        backdrop-filter: blur(12px);<br />
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      </p>
+      <CopyButton value="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2);" label="Copiar" size="sm" />
+    </div>
+  </div>
+
+  <div className="rounded-lg overflow-hidden">
+    <div
+      className="h-40 flex items-center justify-center relative"
+      style={{ background: 'linear-gradient(135deg, #F8F9F9 0%, #E8E9E8 100%)' }}
+    >
+      <div
+        className="px-6 py-4 rounded-lg text-white font-medium"
+        style={{
+          background: 'rgba(0, 0, 0, 0.3)',
+          backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(255, 255, 255, 0.1)'
+        }}
+      >
+        Glass Dark
+      </div>
+    </div>
+    <div className="p-4 bg-white border border-neutral-200 border-t-0 rounded-b-lg">
+      <p className="text-xs font-mono text-neutral-600 mb-2">
+        background: rgba(0, 0, 0, 0.3);<br />
+        backdrop-filter: blur(12px);<br />
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      </p>
+      <CopyButton value="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1);" label="Copiar" size="sm" />
+    </div>
+  </div>
+</div>
+
+### Blur Levels
+
+| Nível | Valor | Uso |
+|-------|-------|-----|
+| `blur-xs` | 2px | Sutil, quase imperceptível |
+| `blur-sm` | 4px | Leve separação |
+| `blur` | 8px | Padrão para cards |
+| `blur-md` | 12px | Destaque moderado |
+| `blur-lg` | 16px | Forte separação |
+| `blur-xl` | 24px | Overlay dramático |
+
+---
+
+## Decorative Elements
+
+Elementos SVG decorativos para enriquecer layouts.
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-6 p-6 bg-neutral-50 rounded-lg">
+  <div className="flex flex-col items-center gap-2">
+    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2">
+      <img src="/decorative/Elementos Diversos-02.svg" alt="Elemento 02" className="max-w-full max-h-full" />
+    </div>
+    <span className="text-xs text-neutral-500">Elemento 02</span>
+  </div>
+  <div className="flex flex-col items-center gap-2">
+    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2">
+      <img src="/decorative/Elementos Diversos-03.svg" alt="Elemento 03" className="max-w-full max-h-full" />
+    </div>
+    <span className="text-xs text-neutral-500">Elemento 03</span>
+  </div>
+  <div className="flex flex-col items-center gap-2">
+    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2">
+      <img src="/decorative/Elementos Diversos-04.svg" alt="Elemento 04" className="max-w-full max-h-full" />
+    </div>
+    <span className="text-xs text-neutral-500">Elemento 04</span>
+  </div>
+  <div className="flex flex-col items-center gap-2">
+    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2">
+      <img src="/decorative/Elementos Diversos-05.svg" alt="Elemento 05" className="max-w-full max-h-full" />
+    </div>
+    <span className="text-xs text-neutral-500">Elemento 05</span>
+  </div>
+  <div className="flex flex-col items-center gap-2">
+    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2">
+      <img src="/decorative/Elementos Diversos-06.svg" alt="Elemento 06" className="max-w-full max-h-full" />
+    </div>
+    <span className="text-xs text-neutral-500">Elemento 06</span>
+  </div>
+  <div className="flex flex-col items-center gap-2">
+    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2">
+      <img src="/decorative/Elementos Diversos-07.svg" alt="Elemento 07" className="max-w-full max-h-full" />
+    </div>
+    <span className="text-xs text-neutral-500">Elemento 07</span>
+  </div>
+</div>
+
+### Uso de Elementos Decorativos
+
+```tsx
+// Importar elemento decorativo
+import decorativeElement from '@/assets/decorative/Elementos Diversos-02.svg'
+
+// Usar como imagem
+<img src={decorativeElement} alt="" className="absolute top-0 right-0 opacity-20" />
+
+// Ou como background
+<div style={{ backgroundImage: `url(${decorativeElement})` }} />
+```
+
+---
+
+## Background Patterns
+
+Padrões de fundo para criar texturas sutis.
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+  <div className="rounded-lg overflow-hidden border border-neutral-200">
+    <div
+      className="h-32 flex items-center justify-center text-neutral-600 font-medium"
+      style={{
+        backgroundImage: `radial-gradient(circle, #E8E9E8 1px, transparent 1px)`,
+        backgroundSize: '20px 20px'
+      }}
+    >
+      Dot Pattern
+    </div>
+    <div className="p-4 bg-white border-t border-neutral-200">
+      <p className="text-xs font-mono text-neutral-600 mb-2">
+        background: radial-gradient(circle, #E8E9E8 1px, transparent 1px);<br />
+        background-size: 20px 20px;
+      </p>
+    </div>
+  </div>
+
+  <div className="rounded-lg overflow-hidden border border-neutral-200">
+    <div
+      className="h-32 flex items-center justify-center text-neutral-600 font-medium"
+      style={{
+        backgroundImage: `linear-gradient(#E8E9E8 1px, transparent 1px), linear-gradient(90deg, #E8E9E8 1px, transparent 1px)`,
+        backgroundSize: '20px 20px'
+      }}
+    >
+      Grid Pattern
+    </div>
+    <div className="p-4 bg-white border-t border-neutral-200">
+      <p className="text-xs font-mono text-neutral-600 mb-2">
+        background: linear-gradient(#E8E9E8 1px, transparent 1px),<br />
+        linear-gradient(90deg, #E8E9E8 1px, transparent 1px);
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
+## Usage Examples
+
+### Hero Section com Gradiente
+
+```tsx
+<section
+  className="min-h-screen flex items-center justify-center"
+  style={{
+    background: 'linear-gradient(135deg, #00109E 0%, #35BFAD 100%)'
+  }}
+>
+  <div className="glass p-8 rounded-xl">
+    <h1 className="text-white text-4xl font-bold">
+      Transforme seu sorriso
+    </h1>
+  </div>
+</section>
+```
+
+### Card com Glass Effect
+
+```tsx
+<div
+  className="p-6 rounded-xl"
+  style={{
+    background: 'rgba(255, 255, 255, 0.15)',
+    backdropFilter: 'blur(12px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)'
+  }}
+>
+  <h3 className="text-white font-semibold">Glass Card</h3>
+  <p className="text-white/80">Conteúdo com efeito fosco</p>
+</div>
+```
+
+### Decorative Background
+
+```tsx
+<div className="relative overflow-hidden">
+  {/* Elemento decorativo */}
+  <img
+    src="/decorative/Elementos Diversos-02.svg"
+    alt=""
+    className="absolute -top-10 -right-10 w-40 h-40 opacity-10"
+  />
+
+  {/* Conteúdo */}
+  <div className="relative z-10">
+    {/* ... */}
+  </div>
+</div>
+```
+
+---
+
+## Tailwind Classes
+
+Classes utilitárias disponíveis:
+
+```css
+/* Glass Morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+```
+
+### Backdrop Blur
+
+| Classe | Valor |
+|--------|-------|
+| `backdrop-blur-xs` | 2px |
+| `backdrop-blur-sm` | 4px |
+| `backdrop-blur` | 8px |
+| `backdrop-blur-md` | 12px |
+| `backdrop-blur-lg` | 16px |
+| `backdrop-blur-xl` | 24px |
+| `backdrop-blur-2xl` | 40px |
+| `backdrop-blur-3xl` | 64px |
+
+---
+
+## Do's and Don'ts
+
+### Do's
+- Use gradientes para criar hierarquia visual
+- Aplique glass morphism sobre fundos coloridos ou imagens
+- Use elementos decorativos com baixa opacidade (10-20%)
+- Mantenha o texto legível sobre texturas
+
+### Don'ts
+- Não use glass morphism sobre fundos brancos simples
+- Não sobreponha muitos elementos decorativos
+- Evite gradientes muito contrastantes para textos longos
+- Não use blur excessivo que comprometa a performance
