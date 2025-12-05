@@ -109,6 +109,19 @@ const preview: Preview = {
       storySort: {
         order: [
           'Introduction',
+          'Brand Book',
+          [
+            'Introduction',
+            'Brand Voice',
+            'Logo System',
+            'Typography',
+            'Colors',
+            'Spacing',
+            'Effects & Shadows',
+            'Iconography',
+            'Templates Gallery',
+            'Textures',
+          ],
           'Design Tokens',
           [
             'Colors',

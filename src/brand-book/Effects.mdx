@@ -1,0 +1,246 @@
+{/* Effects & Shadows */}
+import { Meta } from '@storybook/blocks'
+import { ShadowBox, CopyButton } from './components'
+
+<Meta title="Brand Book/Effects & Shadows" />
+
+# Effects & Shadows
+
+O sistema de sombras da Beauty Smile cria hierarquia visual e profundidade, utilizando a cor neutral-900 em diferentes opacidades.
+
+---
+
+## Escala de Sombras
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100px', height: '100px', background: 'white', borderRadius: '12px', boxShadow: '0 1px 2px 0 rgba(45, 46, 48, 0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: '12px', color: '#6B6D70' }}>sm</span>
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100px', height: '100px', background: 'white', borderRadius: '12px', boxShadow: '0 1px 3px 0 rgba(45, 46, 48, 0.1), 0 1px 2px -1px rgba(45, 46, 48, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: '12px', color: '#6B6D70' }}>default</span>
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100px', height: '100px', background: 'white', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(45, 46, 48, 0.1), 0 2px 4px -2px rgba(45, 46, 48, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: '12px', color: '#6B6D70' }}>md</span>
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100px', height: '100px', background: 'white', borderRadius: '12px', boxShadow: '0 10px 15px -3px rgba(45, 46, 48, 0.1), 0 4px 6px -4px rgba(45, 46, 48, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: '12px', color: '#6B6D70' }}>lg</span>
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100px', height: '100px', background: 'white', borderRadius: '12px', boxShadow: '0 20px 25px -5px rgba(45, 46, 48, 0.1), 0 8px 10px -6px rgba(45, 46, 48, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: '12px', color: '#6B6D70' }}>xl</span>
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100px', height: '100px', background: 'white', borderRadius: '12px', boxShadow: '0 25px 50px -12px rgba(45, 46, 48, 0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: '12px', color: '#6B6D70' }}>2xl</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## Especificacoes das Sombras
+
+| Token | Valor CSS | Uso |
+|-------|-----------|-----|
+| `shadow-sm` | `0 1px 2px 0 rgba(45,46,48,0.05)` | Inputs, cards sutis |
+| `shadow` | `0 1px 3px 0 rgba(45,46,48,0.1)...` | Cards padrao |
+| `shadow-md` | `0 4px 6px -1px rgba(45,46,48,0.1)...` | Popovers, tooltips |
+| `shadow-lg` | `0 10px 15px -3px rgba(45,46,48,0.1)...` | Modais, dialogs |
+| `shadow-xl` | `0 20px 25px -5px rgba(45,46,48,0.1)...` | Overlays importantes |
+| `shadow-2xl` | `0 25px 50px -12px rgba(45,46,48,0.25)` | Hero, CTAs |
+| `shadow-inner` | `inset 0 2px 4px 0 rgba(45,46,48,0.05)` | Inputs focus |
+
+---
+
+## Sistema de Elevacao
+
+<div style={{ display: 'flex', alignItems: 'flex-end', gap: '24px', marginTop: '24px', padding: '40px', background: '#F8F9F9', borderRadius: '12px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: 'white', borderRadius: '8px', marginBottom: '12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Level 0</div>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>Flat</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: 'white', borderRadius: '8px', boxShadow: '0 1px 2px 0 rgba(45, 46, 48, 0.05)', marginBottom: '12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Level 1</div>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>Leve</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: 'white', borderRadius: '8px', boxShadow: '0 4px 6px -1px rgba(45, 46, 48, 0.1), 0 2px 4px -2px rgba(45, 46, 48, 0.1)', marginBottom: '12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Level 2</div>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>Moderado</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: 'white', borderRadius: '8px', boxShadow: '0 10px 15px -3px rgba(45, 46, 48, 0.1), 0 4px 6px -4px rgba(45, 46, 48, 0.1)', marginBottom: '12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Level 3</div>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>Alto</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: 'white', borderRadius: '8px', boxShadow: '0 20px 25px -5px rgba(45, 46, 48, 0.1), 0 8px 10px -6px rgba(45, 46, 48, 0.1)', marginBottom: '12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Level 4</div>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>Maximo</div>
+  </div>
+</div>
+
+---
+
+## Sombras Coloridas
+
+Usadas para botoes e CTAs importantes para criar destaque visual.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ padding: '12px 24px', background: '#00109E', color: 'white', borderRadius: '8px', boxShadow: '0 4px 6px 0 rgba(0, 16, 158, 0.3)', fontWeight: 500 }}>
+      Primary Shadow
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ padding: '12px 24px', background: '#35BFAD', color: 'white', borderRadius: '8px', boxShadow: '0 4px 6px 0 rgba(53, 191, 173, 0.3)', fontWeight: 500 }}>
+      Accent Shadow
+    </div>
+  </div>
+  <div style={{ padding: '32px', borderRadius: '12px', background: '#F8F9F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ padding: '12px 24px', background: '#BB965B', color: 'white', borderRadius: '8px', boxShadow: '0 4px 6px 0 rgba(187, 150, 91, 0.3)', fontWeight: 500 }}>
+      Secondary Shadow
+    </div>
+  </div>
+</div>
+
+---
+
+## Glass Shadows
+
+Para componentes com efeito glassmorphism.
+
+<div style={{ padding: '48px', borderRadius: '16px', background: 'linear-gradient(135deg, #35BFAD 0%, #00109E 100%)', marginTop: '24px' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+    <div style={{ padding: '24px', borderRadius: '12px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.1)', color: 'white', textAlign: 'center' }}>
+      <div style={{ fontWeight: 500, marginBottom: '4px' }}>Glass SM</div>
+      <code style={{ fontSize: '10px', opacity: 0.8 }}>glassShadow.sm</code>
+    </div>
+    <div style={{ padding: '24px', borderRadius: '12px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', boxShadow: '0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.06)', color: 'white', textAlign: 'center' }}>
+      <div style={{ fontWeight: 500, marginBottom: '4px' }}>Glass Default</div>
+      <code style={{ fontSize: '10px', opacity: 0.8 }}>glassShadow.DEFAULT</code>
+    </div>
+    <div style={{ padding: '24px', borderRadius: '12px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', boxShadow: '0 12px 20px 0 rgba(0, 0, 0, 0.15), 0 6px 10px 0 rgba(0, 0, 0, 0.1)', color: 'white', textAlign: 'center' }}>
+      <div style={{ fontWeight: 500, marginBottom: '4px' }}>Glass LG</div>
+      <code style={{ fontSize: '10px', opacity: 0.8 }}>glassShadow.lg</code>
+    </div>
+  </div>
+</div>
+
+---
+
+## Focus Rings
+
+Indicadores de foco para acessibilidade.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#00109E', borderRadius: '8px', boxShadow: '0 0 0 3px rgba(0, 16, 158, 0.3)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Primary</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#35BFAD', borderRadius: '8px', boxShadow: '0 0 0 3px rgba(53, 191, 173, 0.3)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Accent</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#10B981', borderRadius: '8px', boxShadow: '0 0 0 3px rgba(16, 185, 129, 0.3)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Success</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#EF4444', borderRadius: '8px', boxShadow: '0 0 0 3px rgba(239, 68, 68, 0.3)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500 }}>Error</div>
+  </div>
+</div>
+
+---
+
+## Glow Effects
+
+Para elementos com destaque especial.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', marginTop: '24px', padding: '32px', background: '#2D2E30', borderRadius: '12px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#00109E', borderRadius: '8px', boxShadow: '0 0 20px rgba(0, 16, 158, 0.5)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500, color: 'white' }}>Primary</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#35BFAD', borderRadius: '8px', boxShadow: '0 0 20px rgba(53, 191, 173, 0.5)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500, color: 'white' }}>Accent</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#10B981', borderRadius: '8px', boxShadow: '0 0 20px rgba(16, 185, 129, 0.5)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500, color: 'white' }}>Success</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '60px', height: '60px', background: '#EF4444', borderRadius: '8px', boxShadow: '0 0 20px rgba(239, 68, 68, 0.5)', margin: '0 auto 12px' }} />
+    <div style={{ fontSize: '12px', fontWeight: 500, color: 'white' }}>Error</div>
+  </div>
+</div>
+
+---
+
+## Uso com Tailwind
+
+```tsx
+// Sombras padrao
+<div className="shadow-sm">Sombra leve</div>
+<div className="shadow-md">Sombra media</div>
+<div className="shadow-lg">Sombra grande</div>
+
+// Hover effects
+<div className="shadow-md hover:shadow-lg transition-shadow">
+  Card com hover
+</div>
+
+// Focus ring
+<button className="focus:ring-2 focus:ring-primary/30">
+  Button com focus ring
+</button>
+
+// Glass effect
+<div className="bg-white/15 backdrop-blur-lg shadow-glass">
+  Glass Card
+</div>
+```
+
+---
+
+## Tokens TypeScript
+
+```typescript
+import { shadows } from '@/tokens/shadows'
+
+// Box shadows
+shadows.boxShadow.sm      // '0 1px 2px 0 rgba(45, 46, 48, 0.05)'
+shadows.boxShadow.lg      // '0 10px 15px -3px rgba(45, 46, 48, 0.1)...'
+shadows.boxShadow.inner   // 'inset 0 2px 4px 0 rgba(45, 46, 48, 0.05)'
+
+// Glass shadows
+shadows.glassShadow.DEFAULT // '0 4px 6px 0 rgba(0, 0, 0, 0.1)...'
+
+// Colored shadows
+shadows.coloredShadow.primary.DEFAULT // '0 4px 6px 0 rgba(0, 16, 158, 0.3)'
+shadows.coloredShadow.accent.lg       // '0 10px 15px -3px rgba(53, 191, 173, 0.4)'
+
+// Focus shadows
+shadows.semanticShadow.focus.primary // '0 0 0 3px rgba(0, 16, 158, 0.3)'
+
+// Glow effects
+shadows.semanticShadow.glow.accent   // '0 0 20px rgba(53, 191, 173, 0.5)'
+
+// Elevation system
+shadows.elevation.level0 // boxShadow.none
+shadows.elevation.level2 // boxShadow.md
+shadows.elevation.level4 // boxShadow.xl
+```

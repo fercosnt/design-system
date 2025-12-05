@@ -1,0 +1,332 @@
+{/* Spacing */}
+import { Meta } from '@storybook/blocks'
+import { SpacingVisualizer, CopyButton } from './components'
+
+<Meta title="Brand Book/Spacing" />
+
+# Spacing
+
+O sistema de espacamento da Beauty Smile e baseado em incrementos de 4px, criando ritmo visual consistente em toda a interface.
+
+---
+
+## Unidade Base
+
+<div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', marginTop: '16px' }}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+    <div style={{ width: '16px', height: '16px', background: '#00109E', borderRadius: '2px' }} />
+    <div>
+      <strong>4px (0.25rem)</strong>
+      <p style={{ margin: '4px 0 0 0', fontSize: '14px', color: '#6B6D70' }}>Unidade base para todos os espacamentos</p>
+    </div>
+  </div>
+</div>
+
+---
+
+## Escala de Espacamento
+
+<div style={{ marginTop: '24px' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+    <thead>
+      <tr style={{ background: '#F8F9F9' }}>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Token</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Pixels</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>REM</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Visual</th>
+        <th style={{ padding: '12px 16px', textAlign: 'left', borderBottom: '1px solid #E8E9E8' }}>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-1</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>4px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>0.25rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '4px', height: '16px', background: '#35BFAD', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Gaps minimos</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-2</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>8px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>0.5rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '8px', height: '16px', background: '#35BFAD', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Icone-texto</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-3</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>12px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>0.75rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '12px', height: '16px', background: '#35BFAD', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Padding input</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-4</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>16px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>1rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '16px', height: '16px', background: '#00109E', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Padrao geral</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-6</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>24px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>1.5rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '24px', height: '16px', background: '#00109E', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Padding card</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-8</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>32px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>2rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '32px', height: '16px', background: '#00109E', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Secoes</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-12</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>48px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>3rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '48px', height: '16px', background: '#00109E', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Secoes maiores</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-16</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>64px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>4rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '64px', height: '16px', background: '#00109E', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Pagina</td>
+      </tr>
+      <tr>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><code>spacing-24</code></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>96px</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}>6rem</td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8' }}><div style={{ width: '96px', height: '16px', background: '#00109E', borderRadius: '2px' }} /></td>
+        <td style={{ padding: '12px 16px', borderBottom: '1px solid #E8E9E8', fontSize: '13px', color: '#6B6D70' }}>Hero</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## Espacamento Semantico
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <h4 style={{ margin: '0 0 16px 0' }}>Componentes</h4>
+    <table style={{ width: '100%', fontSize: '13px' }}>
+      <tbody>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Button padding</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>16px</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Card padding</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>24px</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Input padding</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>12px</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Icon gap</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>8px</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', border: '1px solid #E8E9E8' }}>
+    <h4 style={{ margin: '0 0 16px 0' }}>Layout</h4>
+    <table style={{ width: '100%', fontSize: '13px' }}>
+      <tbody>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Grid gutter</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>16px</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Container padding</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>24px</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Section spacing</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>64px</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '8px 0' }}>Page padding</td>
+          <td style={{ padding: '8px 0', textAlign: 'right' }}><code>96px</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+---
+
+## Border Radius
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '4px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>sm</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>4px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '8px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>default</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>8px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '12px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>md</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>12px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '16px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>lg</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>16px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '24px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>xl</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>24px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '32px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>2xl</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>32px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '48px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>3xl</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>48px</div>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <div style={{ width: '80px', height: '80px', background: '#00109E', borderRadius: '9999px', margin: '0 auto 12px' }} />
+    <code style={{ fontSize: '12px' }}>full</code>
+    <div style={{ fontSize: '11px', color: '#6B6D70' }}>9999px</div>
+  </div>
+</div>
+
+---
+
+## Container Widths
+
+| Token | Largura | Uso |
+|-------|---------|-----|
+| `container-sm` | 640px | Conteudo estreito, mobile |
+| `container-md` | 768px | Tablet |
+| `container-lg` | 1024px | Desktop pequeno |
+| `container-xl` | 1280px | Desktop padrao |
+| `container-2xl` | 1536px | Desktop grande |
+| `container-full` | 100% | Largura total |
+
+---
+
+## Breakpoints
+
+<div style={{ marginTop: '24px' }}>
+  <div style={{ display: 'flex', alignItems: 'stretch', gap: '2px', height: '60px' }}>
+    <div style={{ flex: '475', background: '#35BFAD', borderRadius: '8px 0 0 8px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px' }}>
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ fontWeight: 600 }}>xs</div>
+        <div style={{ opacity: 0.8 }}>475px</div>
+      </div>
+    </div>
+    <div style={{ flex: '165', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px' }}>
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ fontWeight: 600 }}>sm</div>
+        <div style={{ opacity: 0.8 }}>640px</div>
+      </div>
+    </div>
+    <div style={{ flex: '128', background: '#35BFAD', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px' }}>
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ fontWeight: 600 }}>md</div>
+        <div style={{ opacity: 0.8 }}>768px</div>
+      </div>
+    </div>
+    <div style={{ flex: '256', background: '#00109E', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px' }}>
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ fontWeight: 600 }}>lg</div>
+        <div style={{ opacity: 0.8 }}>1024px</div>
+      </div>
+    </div>
+    <div style={{ flex: '256', background: '#35BFAD', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px' }}>
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ fontWeight: 600 }}>xl</div>
+        <div style={{ opacity: 0.8 }}>1280px</div>
+      </div>
+    </div>
+    <div style={{ flex: '256', background: '#00109E', borderRadius: '0 8px 8px 0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px' }}>
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ fontWeight: 600 }}>2xl</div>
+        <div style={{ opacity: 0.8 }}>1536px</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## Z-Index Scale
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `z-base` | 0 | Elementos base |
+| `z-dropdown` | 1000 | Dropdowns, selects |
+| `z-sticky` | 1100 | Headers fixos |
+| `z-fixed` | 1200 | Elementos fixed |
+| `z-modal-backdrop` | 1300 | Backdrop de modais |
+| `z-modal` | 1400 | Modais |
+| `z-popover` | 1500 | Popovers |
+| `z-tooltip` | 1600 | Tooltips |
+| `z-notification` | 1700 | Notificacoes |
+| `z-top` | 9999 | Acima de tudo |
+
+---
+
+## Uso com Tailwind
+
+```tsx
+// Padding e margin
+<div className="p-4 m-2">16px padding, 8px margin</div>
+<div className="px-6 py-4">24px horizontal, 16px vertical</div>
+
+// Gap
+<div className="flex gap-4">16px entre items</div>
+<div className="grid gap-6">24px grid gap</div>
+
+// Border radius
+<div className="rounded-lg">16px radius</div>
+<div className="rounded-full">Pill shape</div>
+
+// Responsive
+<div className="p-4 md:p-6 lg:p-8">
+  16px mobile, 24px tablet, 32px desktop
+</div>
+```
+
+---
+
+## Tokens TypeScript
+
+```typescript
+import { spacingTokens } from '@/tokens/spacing'
+
+// Escala base
+spacingTokens.spacing[4]   // '16px'
+spacingTokens.spacing[8]   // '32px'
+
+// Semantico
+spacingTokens.semanticSpacing.md         // '16px'
+spacingTokens.semanticSpacing.cardPadding // '24px'
+
+// Border radius
+spacingTokens.borderRadius.lg   // '16px'
+spacingTokens.borderRadius.full // '9999px'
+
+// Breakpoints
+spacingTokens.breakpoints.md  // '768px'
+spacingTokens.breakpoints.xl  // '1280px'
+
+// Z-index
+spacingTokens.zIndex.modal    // 1400
+spacingTokens.zIndex.tooltip  // 1600
+```

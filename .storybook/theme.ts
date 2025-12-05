@@ -13,7 +13,7 @@ export default create({
   // Brand
   brandTitle: 'Beauty Smile Design System',
   brandUrl: 'https://beautysmile.com',
-  brandImage: undefined, // Add logo URL here if available
+  brandImage: '/logos/svg/horizontal/Beauty-Smile-logo-horizontal-azul.svg',
   brandTarget: '_self',
 
   // Colors

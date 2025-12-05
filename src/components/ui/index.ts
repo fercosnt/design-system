@@ -22,3 +22,6 @@ export * from './Dialog'
 
 // Data Display
 export * from './Table'
+
+// Progress
+export * from './ProgressBar'

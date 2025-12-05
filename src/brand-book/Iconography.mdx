@@ -1,0 +1,439 @@
+{/* Iconography */}
+import { Meta } from '@storybook/blocks'
+import { IconGrid, CopyButton } from './components'
+import {
+  Menu, X, ChevronLeft, ChevronRight, ChevronDown, ChevronUp, ArrowLeft, ArrowRight, ArrowUp, ArrowDown,
+  Home, Settings, User, Users, Bell, Search, Mail, Phone, Calendar, Clock,
+  Plus, Minus, Edit, Trash2, Copy, Save, Download, Upload, ExternalLink, Link,
+  Check, X as XIcon, AlertCircle, AlertTriangle, Info, HelpCircle, CheckCircle, XCircle,
+  Eye, EyeOff, Lock, Unlock, Shield, Key,
+  Heart, Star, Bookmark, Share2, MessageCircle, Send,
+  File, FileText, Folder, Image, Video, Music,
+  BarChart2, PieChart, TrendingUp, TrendingDown, Activity,
+  Grid, List, Filter, SortAsc, SortDesc, Columns,
+  Smile, Frown, Meh, ThumbsUp, ThumbsDown, Award
+} from 'lucide-react'
+
+<Meta title="Brand Book/Iconography" />
+
+# Iconography
+
+O sistema de icones da Beauty Smile utiliza a biblioteca Lucide React, que oferece icones consistentes, leves e acessiveis.
+
+---
+
+## Biblioteca
+
+<div style={{ padding: '24px', borderRadius: '12px', background: '#F8F9F9', marginTop: '16px' }}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+    <img src="https://lucide.dev/logo.dark.svg" alt="Lucide" style={{ height: '32px' }} />
+    <div>
+      <strong>Lucide React</strong>
+      <p style={{ margin: '4px 0 0 0', fontSize: '14px', color: '#6B6D70' }}>Biblioteca de icones open-source com 1000+ icones</p>
+    </div>
+  </div>
+</div>
+
+```bash
+npm install lucide-react
+```
+
+---
+
+## Tamanhos
+
+<div style={{ display: 'flex', alignItems: 'flex-end', gap: '32px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={16} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>16px</div>
+    <code style={{ fontSize: '10px' }}>size="16"</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={20} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>20px</div>
+    <code style={{ fontSize: '10px' }}>size="20"</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>24px</div>
+    <code style={{ fontSize: '10px' }}>size="24"</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={32} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>32px</div>
+    <code style={{ fontSize: '10px' }}>size="32"</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={48} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>48px</div>
+    <code style={{ fontSize: '10px' }}>size="48"</code>
+  </div>
+</div>
+
+---
+
+## Stroke Width
+
+<div style={{ display: 'flex', alignItems: 'flex-end', gap: '32px', marginTop: '24px' }}>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={32} strokeWidth={1} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>1px</div>
+    <code style={{ fontSize: '10px' }}>strokeWidth=&#123;1&#125;</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={32} strokeWidth={1.5} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>1.5px</div>
+    <code style={{ fontSize: '10px' }}>strokeWidth=&#123;1.5&#125;</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={32} strokeWidth={2} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>2px</div>
+    <code style={{ fontSize: '10px' }}>strokeWidth=&#123;2&#125;</code>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <Home size={32} strokeWidth={2.5} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '12px', fontWeight: 500 }}>2.5px</div>
+    <code style={{ fontSize: '10px' }}>strokeWidth=&#123;2.5&#125;</code>
+  </div>
+</div>
+
+---
+
+## Navegacao
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Menu size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Menu</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <X size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>X</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <ChevronLeft size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>ChevronLeft</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <ChevronRight size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>ChevronRight</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <ChevronDown size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>ChevronDown</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <ChevronUp size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>ChevronUp</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Home size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Home</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Search size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Search</div>
+  </div>
+</div>
+
+---
+
+## Acoes
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Plus size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Plus</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Minus size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Minus</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Edit size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Edit</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Trash2 size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Trash2</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Copy size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Copy</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Save size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Save</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Download size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Download</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Upload size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Upload</div>
+  </div>
+</div>
+
+---
+
+## Status
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Check size={24} style={{ color: '#10B981' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Check</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <XIcon size={24} style={{ color: '#EF4444' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>X</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <CheckCircle size={24} style={{ color: '#10B981' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>CheckCircle</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <XCircle size={24} style={{ color: '#EF4444' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>XCircle</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <AlertCircle size={24} style={{ color: '#EF4444' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>AlertCircle</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <AlertTriangle size={24} style={{ color: '#F59E0B' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>AlertTriangle</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Info size={24} style={{ color: '#35BFAD' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Info</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <HelpCircle size={24} style={{ color: '#6B6D70' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>HelpCircle</div>
+  </div>
+</div>
+
+---
+
+## Usuario & Seguranca
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <User size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>User</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Users size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Users</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Settings size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Settings</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Lock size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Lock</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Unlock size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Unlock</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Shield size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Shield</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Key size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Key</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Eye size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Eye</div>
+  </div>
+</div>
+
+---
+
+## Comunicacao
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Bell size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Bell</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Mail size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Mail</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Phone size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Phone</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <MessageCircle size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>MessageCircle</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Send size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Send</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Share2 size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Share2</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Link size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Link</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <ExternalLink size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>ExternalLink</div>
+  </div>
+</div>
+
+---
+
+## Data & Tempo
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Calendar size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Calendar</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Clock size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Clock</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <BarChart2 size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>BarChart2</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <TrendingUp size={24} style={{ color: '#10B981' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>TrendingUp</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <TrendingDown size={24} style={{ color: '#EF4444' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>TrendingDown</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Activity size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Activity</div>
+  </div>
+</div>
+
+---
+
+## Odontologia (Customizados)
+
+Para icones especificos da area odontologica, recomendamos criar icones SVG customizados ou usar alternativas da Lucide:
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '16px', marginTop: '24px' }}>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Smile size={24} style={{ color: '#35BFAD' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Smile</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Heart size={24} style={{ color: '#EF4444' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Heart</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Star size={24} style={{ color: '#F59E0B' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Star</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Award size={24} style={{ color: '#BB965B' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Award</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <ThumbsUp size={24} style={{ color: '#10B981' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>ThumbsUp</div>
+  </div>
+  <div style={{ padding: '16px', borderRadius: '8px', border: '1px solid #E8E9E8', textAlign: 'center' }}>
+    <Shield size={24} style={{ color: '#00109E' }} />
+    <div style={{ marginTop: '8px', fontSize: '11px' }}>Shield</div>
+  </div>
+</div>
+
+---
+
+## Uso com React
+
+```tsx
+import { Home, Settings, User, Bell, Check, X } from 'lucide-react'
+
+// Uso basico
+<Home size={24} />
+
+// Com cor
+<Home size={24} className="text-primary" />
+
+// Com stroke width customizado
+<Home size={24} strokeWidth={1.5} />
+
+// Em botao
+<button className="flex items-center gap-2">
+  <Settings size={20} />
+  Configuracoes
+</button>
+
+// Status icons
+<CheckCircle className="text-success" size={20} />
+<AlertTriangle className="text-warning" size={20} />
+<XCircle className="text-error" size={20} />
+```
+
+---
+
+## Guidelines
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px', marginTop: '24px' }}>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#F0FDF4', border: '1px solid #BBF7D0' }}>
+    <h4 style={{ color: '#16A34A', margin: '0 0 16px 0' }}>Faca</h4>
+    <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: 1.8 }}>
+      <li>Use tamanho 20-24px para UI padrao</li>
+      <li>Mantenha strokeWidth consistente (1.5)</li>
+      <li>Use cores semanticas para status</li>
+      <li>Adicione gap de 8px entre icone e texto</li>
+      <li>Importe icones individualmente</li>
+    </ul>
+  </div>
+  <div style={{ padding: '24px', borderRadius: '12px', background: '#FEF2F2', border: '1px solid #FECACA' }}>
+    <h4 style={{ color: '#DC2626', margin: '0 0 16px 0' }}>Nao Faca</h4>
+    <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: 1.8 }}>
+      <li>Misturar bibliotecas de icones</li>
+      <li>Usar tamanhos inconsistentes</li>
+      <li>Importar toda a biblioteca</li>
+      <li>Usar icones sem significado claro</li>
+      <li>Esquecer acessibilidade (aria-label)</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Acessibilidade
+
+```tsx
+// Para icones decorativos
+<Home size={24} aria-hidden="true" />
+
+// Para icones com significado
+<button aria-label="Fechar modal">
+  <X size={24} />
+</button>
+
+// Ou com sr-only
+<button>
+  <X size={24} aria-hidden="true" />
+  <span className="sr-only">Fechar modal</span>
+</button>
+```
+
+---
+
+## Recursos
+
+- [Lucide Icons](https://lucide.dev/icons/) - Biblioteca completa
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react) - Documentacao React
